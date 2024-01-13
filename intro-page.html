@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO |Ye Wint Pai FDC-12</title>
+    <link rel="stylesheet" href="./vendors/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./main-page-style.css">
+    <link rel="stylesheet" href="./intro-page-style.css">
+    <link rel="stylesheet" href="./vendors/fontawesome/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./vendors/animate.css/animate.min.css">
+    <!-- favicon link  -->
+    <link rel="icon" href="vendors/favicon_package_v0.16/favicon-32x32.png" type="image/icon type">
+    <!-- end favicon link  -->
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="height: 100vh;">
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg" style="padding: 0px!important;" id="navBar">
+        <div class="container d-flex mt-2 " id="nav-container">
+            <a class="navbar-brand" href="#">
+                <img id="logo" class="ms-3 logo-levitate" src="./svg/whale-svgrepo-com.svg" width="80px" height="80px"
+                    alt="" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="navbar-nav kanit-bold m-auto">
+                    <p class="kanit-thin">DARK &nbsp;</p>
+                    <p class="kanit-bold darkLightText">OR LIGHT, &nbsp;</p>
+                    <p class="kanit-thin">IT'S &nbsp;</p>
+                    <p class="kanit-bold darkLightText">UP TO YOU</p>
+                    <div class="nav-item p-2 mb-4 mx-4">
+                        <input type="checkbox" id="darkmode-toggle" />
+                        <label for="darkmode-toggle">
+                            <img class="eye-open" id="eye-toggle" src="./svg/eye-open-svgrepo-com.svg" alt="" srcset="">
+                            <img class="eye-closed" src="./svg/eye-closed-svgrepo-com.svg" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="kanit-thin navbar-nav nav-item">
+                <h1 id="references" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" style="cursor: pointer;"
+                aria-controls="offcanvasRight">References</h1>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- end navbar  -->
+    <!-- offcavas-right  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header kanit-thin">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">References <hr></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"id="offcanvas-inner-btn" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <h1 class="kanit-bold" id="eldon">
+                ELDON QODE INTERACTIVE
+            </h1>
+        </div>
+    </div>
+    <!-- end offcanvas right  -->
+
+    <div class="container" id="intro-main-text">
+        <h1>SMOOTH</h1>
+    </div>
+
+    <div class="blank-space-add" style="height: 50px;"></div>
+
+    <div class="container text-center" id="fade-beat-chevron">
+        <a href="#parallax"><i class="fa fa-chevron-down fa-beat-fade"></i></a>
+    </div>
+
+    <div class="blank-space-add" style="height: 180px;">
+
+    </div>
+
+    <div class="container text-center d-flex" id="parallax">
+        <div class="" id="intro-container-btn">
+            <a class="btn btn-dark kanit-thin" id="enter-btn" href="./main-page.html">ENTER</a>
+        </div>
+
+    </div>
+
+    <div class="container-fluid text-center kanit-thin" style="height: 70px" id="intro-footer">
+        <hr>
+        <div>
+            <span>Developed By</span>
+            <span><a href="#" class="kanit-bold">Ye Wint Pai</a></span>
+            <span>@2024.</span>
+        </div>
+    </div>
+
+    <script src="./vendors/boostrap/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // btn-go-up
+            // hover animation
+            $('#btn-go-up').hover(() => {
+                $('#btn-go-up').children('i').addClass('fa-beat-fade');
+            }, () => {
+                $('#btn-go-up').children('i').removeClass('fa-beat-fade');
+            });
+
+            // to appears on wintop 
+            $(window).scroll(() => {
+                let winTop = $(window).scrollTop();
+
+                let btnUpArrow = $('#btn-go-up');
+
+                if (winTop >= 600) {
+                    $(btnUpArrow).show(700);
+                }
+                else {
+                    $(btnUpArrow).hide(200)
+                }
+            })
+            // End btn-go-up 
+
+            //dark mode / light mode switch
+            $('#darkmode-toggle').click(() => {
+                $('body').toggleClass('dark-mode');
+                $('.content-info').toggleClass('dark-mode');
+                $('.nav-link').toggleClass('dark-mode');
+                $('#nav-container').toggleClass('dark-mode');
+                if ($('#nav-container').hasClass('dark-mode')) {
+                    $('.navbar').attr('data-bs-theme', 'dark')
+                } else {
+                    $('.navbar').removeAttr('data-bs-theme', 'dark')
+                }
+                $('#btn-go-up').toggleClass('dark-mode');
+                $('.offcanvas').toggleClass('dark-mode');
+                if ($('.offcanvas').hasClass('dark-mode')) {
+                    $('.btn-close').addClass('btn-close-white');
+                } else {
+                    $('.btn-close').removeClass('btn-close-white');
+                }
+                $('#contact').toggleClass('dark-mode');
+                $('.contact-info-button').toggleClass('dark-mode');
+                // intro page 
+                $('#intro-main-text').toggleClass('dark-mode');
+                if ($('#enter-btn').hasClass('btn-dark')) {
+                    $('#enter-btn').removeClass('btn-dark');
+                    $('#enter-btn').addClass('btn-light');
+                } else if ($('#enter-btn').hasClass('btn-light')) {
+                    $('#enter-btn').removeClass('btn-light');
+                    $('#enter-btn').addClass('btn-dark');
+                }
+                $('#intro-footer').toggleClass('dark-mode');
+            });
+
+
+            // making parallax image responsive copied from external website 
+            /* resize the image(s) on page load */
+            $(document).ready(function () {
+                resize_all_parallax();
+            });
+
+            /* resize the image(s) on page resize */
+            $(window).on('resize', function () {
+                resize_all_parallax();
+            });
+
+            /* keep all of your resize function calls in one place so you don't have to edit them twice (on page load and resize) */
+            function resize_all_parallax() {
+                var div_id = 'img1'; /* the ID of the div that you're resizing */
+                var img_w = 1000; /* the width of your image, in pixels */
+                var img_h = 864; /* the height of your image, in pixels */
+                resize_parallax(div_id, img_w, img_h);
+            }
+
+            /* this resizes the parallax image down to an appropriate size for the viewport */
+            function resize_parallax(div_id, img_w, img_h) {
+                var div = $('#' + div_id);
+                var divwidth = div.width();
+                if (divwidth < 769) { var pct = (img_h / img_w) * 105; } /* show full image, plus a little padding, if on static mobile view */
+                else { var pct = 40; } /* this is the HEIGHT as percentage of the current div WIDTH. you can change it to show more (or less) of your image */
+                var newheight = Math.round(divwidth * (pct / 100));
+                newheight = newheight + 'px';
+                div.height(newheight);
+            }
+            //End making parallax image responsive copied from external website 
+        })
+    </script>
+</body>
+
+</html>

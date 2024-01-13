@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ye Wint Pai FDC-12</title>
+  <link rel="stylesheet" href="./vendors/boostrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./main-page-style.css">
+  <link rel="stylesheet" href="./vendors/fontawesome/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./vendors/animate.css/animate.min.css">
+  <!-- favicon link  -->
+  <link rel="icon" href="vendors/favicon_package_v0.16/favicon-32x32.png" type="image/icon type">
+  <!-- end favicon link  -->
+  <!-- Google Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&display=swap" rel="stylesheet">
+  <!-- End Google Font Import -->
+</head>
+
+<body class="light-mode">
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg" style="padding: 0px!important;" id="navBar">
+    <div class="container d-flex  mt-2 " id="nav-container">
+      <a class="navbar-brand" href="./intro-page.html">
+        <img id="logo" class="ms-3 logo-levitate" src="./svg/whale-svgrepo-com.svg" width="80px" height="80px"
+         alt="" srcset="">
+      </a>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav kanit-bold ms-auto">
+          <li class="nav-item p-2 mx-3" id="logo-stop-hover1">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-stop" id="logo-stop1"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item p-2 mx-3" id="logo-stop-hover2">
+            <a class="nav-link" href="#porfolio">
+              <i class="fa-solid fa-stop" id="logo-stop2"></i>
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item p-2 mx-3" id="logo-stop-hover3">
+            <a class="nav-link" href="#contact">
+              <i class="fa-solid fa-stop" id="logo-stop3"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item p-2 mb-4 mx-4">
+        <input type="checkbox" id="darkmode-toggle"/>
+        <label for="darkmode-toggle">
+          <img class="eye-open" id="eye-toggle" src="./svg/eye-open-svgrepo-com.svg" alt="" srcset="">
+          <img class="eye-closed" src="./svg/eye-closed-svgrepo-com.svg" alt="">
+        </label>
+      </div>  
+      <div class="mx-3 nav-item ">
+        <a class="nav-link " href="#" role="button">
+          <!-- Offcanvas Button for id="offcanvasRight" -->
+          <button class="btn btn-dark" id="btn-offcanvas" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+              class="fa-solid fa-hand-sparkles"></i></button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offset Right Pop Up Code -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header kanit-thin">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Credits
+        <hr>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" id="offcanvas-inner-btn"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body text-center mt-5">
+      <h4 class="kanit-thin">These Beautiful Isometrics From The Images Are Done By Wonderful and Awesome Person,
+      </h4>
+      <h1 class="kanit-bold">Honyx</h1>
+       <br>
+       <div id="offcanvas-social-icons">
+          <a href="https://www.facebook.com/shine.vandal" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://www.behance.net/honyx" target="_blank">
+            <i class="fa-brands fa-square-behance"></i>
+          </a>
+       </div>
+    </div>
+  </div>
+  <!-- End Offset Right Pop Up Code  -->
+  <!-- end navbar -->
+
+  <!-- content body  -->
+  <div class="container" style="margin-top:70px" id="portfolio">
+    <div class="content-item">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
+          <div id="" class="content-img ">
+            <img src="./images/content-img 1.jpeg" width="500px" height="340px" alt="">
+          </div>
+        </div>
+        <div class="content-info col-md-6 col-sm-12 text-center">
+          <div class="content-info-title">
+            <span><i class="fa-solid fa-square fa-xs"></i></span>
+            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+          </div>
+
+          <div class="content-info-button">
+            <button class="button-30">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-item" >
+      <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
+          <div id="" class="content-img ">
+            <img src="./images/content-img 6.jpeg" width="500px" height="340px" alt="">
+          </div>
+        </div>
+        <div class="content-info col-md-6 col-sm-12 text-center">
+          <div class="content-info-title">
+            <span><i class="fa-solid fa-square fa-xs"></i></span>
+            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+          </div>
+
+          <div class="content-info-button">
+            <button class="button-30">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
+          <div id="" class="content-img ">
+            <img src="./images/content-img 2.jpeg" width="500px" height="340px" alt="">
+          </div>
+        </div>
+        <div class="content-info col-md-6 col-sm-12 text-center">
+          <div class="content-info-title">
+            <span><i class="fa-solid fa-square fa-xs"></i></span>
+            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+          </div>
+
+          <div class="content-info-button">
+            <button class="button-30">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
+          <div id="" class="content-img ">
+            <img src="./images/content-img 7.jpeg" width="500px" height="340px" alt="">
+          </div>
+        </div>
+        <div class="content-info col-md-6 col-sm-12 text-center">
+          <div class="content-info-title">
+            <span><i class="fa-solid fa-square fa-xs"></i></span>
+            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+          </div>
+
+          <div class="content-info-button">
+            <button class="button-30">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-item">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
+          <div id="" class="content-img ">
+            <img src="./images/content-img 4.jpeg" width="500px" height="340px" alt="">
+          </div>
+        </div>
+        <div class="content-info col-md-6 col-sm-12 text-center">
+          <div class="content-info-title">
+            <span><i class="fa-solid fa-square fa-xs"></i></span>
+            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+          </div> 
+
+          <div class="content-info-button">
+            <button class="button-30">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end content body  -->
+
+  <!-- footer  -->
+  <div class="container" id="contact">
+    <div class="row m-2" id="footer">
+      <div class="col-md-2">
+        <img id="" class="ms-3 logo-levitate-footer logo-footer" src="./svg/whale-svgrepo-com.svg" width="80px" height="80px"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+         alt="" srcset="">
+      </div>
+      <div class="col-md-3">
+        <p>WaiZaYanTar Rd.</p>
+        <p>Thuwanna, Yangon</p>
+      </div>
+      <div class="col-md-4" id="container-social-link">
+        <p>yewintpaimyel@gmail.com</p>
+        <span ><a class="social-links" href="https://www.facebook.com/yairwint.pai.52" target="_blank">Fb.</a></span>
+        &nbsp;&nbsp;
+        <span ><a class="social-links" href="https://www.instagram.com/kiaru.wufuwa/" target="_blank">In.</a></span>
+        &nbsp;&nbsp;
+        <span ><a class="social-links" href="https://github.com/YeWintPai" target="_blank">Gh.</a></span>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <input type="email" placeholder="Need your email here..." id="btn-email-submit">
+          <a style="position: relative;" class="btn mt-3">
+            <p id="btn-sign-up" href="" class="kanit-bold">Sign Up</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- right bottom Go Up Button  -->
+  <a href="#" id="btn-go-up">
+    <i class="fa-solid fa-arrow-up-long"></i>
+  </a>
+    <!-- end right bottom go up button  -->
+  <script src="./vendors/boostrap/bootstrap.bundle.min.js"></script>
+  <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      $('#btn-go-up').hide();
+      $('.navbar .nav-item a').click((event) => {
+        $('.navbar .nav-item a').removeClass('active');
+        $(event.currentTarget).addClass('active')
+        $(event.currentTarget).child('.fa-solid.fa-stop').css('opacity', '1');
+      });
+      // For Hover Effect On Nav Bar 
+      // Ask Sayar For Better Solution
+
+      $('.fa-solid.fa-stop').css('opacity', '0');
+      $('#logo-stop-hover1').hover(() => {
+        $('#logo-stop1').css('opacity', '1');
+      }, () => {
+        $('#logo-stop1').css('opacity', '0');
+      })
+
+      $('#logo-stop-hover2').hover(() => {
+        $('#logo-stop2').css('opacity', '1');
+      }, () => {
+        $('#logo-stop2').css('opacity', '0');
+      })
+
+      $('#logo-stop-hover3').hover(() => {
+        $('#logo-stop3').css('opacity', '1');
+      }, () => {
+        $('#logo-stop3').css('opacity', '0');
+      })
+      // End For Hover Effect On Nav Bar 
+
+      // btn-go-up
+
+      // hover animation
+      $('#btn-go-up').hover(() => {
+        $('#btn-go-up').children('i').addClass('fa-beat-fade');
+      }, () => {
+        $('#btn-go-up').children('i').removeClass('fa-beat-fade');
+      });
+
+      // to appears on wintop 
+      $(window).scroll(() => {
+        let winTop = $(window).scrollTop();
+
+        let btnUpArrow = $('#btn-go-up');
+
+        if (winTop >= 600) {
+          $(btnUpArrow).show(700);
+        }
+        else {
+          $(btnUpArrow).hide(200)
+        }
+      })
+      // End btn-go-up 
+
+      //dark mode / light mode switch
+      $('#darkmode-toggle').click(()=>{
+        $('body').toggleClass('dark-mode');
+        $('.content-info').toggleClass('dark-mode');
+        $('.nav-link').toggleClass('dark-mode');
+        $('#nav-container').toggleClass('dark-mode');
+        if($('#nav-container').hasClass('dark-mode')) {
+          $('.navbar').attr('data-bs-theme','dark')
+        }else {
+          $('.navbar').removeAttr('data-bs-theme','dark')
+        }
+        $('#btn-go-up').toggleClass('dark-mode');
+        $('.offcanvas').toggleClass('dark-mode');
+        if($('.offcanvas').hasClass('dark-mode')) {
+          $('.btn-close').addClass('btn-close-white');
+        }else {
+          $('.btn-close').removeClass('btn-close-white');
+        }
+        $('#contact').toggleClass('dark-mode');
+        $('.contact-info-button').toggleClass('dark-mode');
+      });
+      
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.kanit-thin {
+    font-family: 'Kanit' , sans-serif;
+    font-weight: 100;
+}
+
+.kanit-bold {
+    font-family: 'Kanit' , sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item p {
+    word-spacing: 3px;
+}

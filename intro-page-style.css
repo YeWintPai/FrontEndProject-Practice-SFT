@@ -1,0 +1,197 @@
+/* intro page css  */
+html {
+    scroll-behavior: smooth;
+  }
+
+#logo.logo-levitate {
+    width: 100px;
+    height: 100px;
+}
+#intro-main-text {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  
+#intro-main-text h1 {
+    user-select: none;
+    font-size: 250px;
+    line-height: 1;
+    background-image:url(./images/view_seattle.png);
+    font-weight: 900;
+    opacity: 0.8;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#fade-beat-chevron a{
+    font-size: 30px;
+    color: inherit;
+}
+
+.navbar-nav p {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.kanit-thin #references{
+    font-size: 30px;
+
+}
+
+#parallax {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/view_seattle.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro-container-btn #enter-btn{
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border-radius: 0px;
+    background-color: black;
+    color: #FFFFFF;
+    background: black;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: 0.6s;
+}
+
+#intro-container-btn #enter-btn:hover{
+    border-radius: 8px;
+    padding: 10px 30px 10px 30px;
+    transform: scale(1.1);
+    transform: translateY(-10px);
+}
+
+#intro-container-btn #enter-btn:focus{
+    border-radius: 8px;
+    padding: 10px 30px 10px 30px;
+    transform: scale(1.1);
+    transform: translateY(5px);
+}
+
+#intro-container-btn .btn-light#enter-btn {
+    background-color: white;
+    color: #5f2a9e;
+    background: white;
+    text-shadow: 0 0 10px rgb(206, 13, 116);
+}
+
+#intro-footer {
+    font-size: 25px;
+}
+
+#intro-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width:1270px) {
+    #intro-main-text h1{
+        font-size:220px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #intro-main-text h1{
+        font-size:190px;
+    }
+
+    .navbar-brand img {
+        width: 75px!important;
+        height: 75px!important;
+    }
+
+    .navbar-nav p,
+    .navbar #references{
+        font-size:26px
+    }
+
+    #parallax i {
+        font-size: 15px;
+    }
+
+    #intro-footer span{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #intro-main-text h1{
+        font-size:140px;
+    }
+    .navbar-brand img {
+        width: 68px!important;
+        height: 68px!important;
+    }
+
+    .navbar-nav p{
+        font-size:20px
+    }
+    .navbar #references{
+        display: none;
+    }
+
+    #fade-beat-chevron a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #intro-main-text h1{
+        font-size:100px;
+    }
+
+	#parallax {
+		background-attachment: inherit;
+	}
+
+    #intro-footer span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    #intro-main-text h1{
+        font-size:80px;
+    }
+
+    .navbar-brand img {
+        width: 70px!important;
+        height: 70px!important;
+    }
+
+    .navbar-nav p{
+        font-size:16px
+    }
+}
+
+@media screen and (max-width:420px) {
+    #intro-main-text h1{
+        font-size:70px;
+    }
+    #fade-beat-chevron a{
+        font-size:13px;
+    }
+
+    #intro-footer span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    #intro-main-text h1{
+        font-size:60px;
+    }
+}
