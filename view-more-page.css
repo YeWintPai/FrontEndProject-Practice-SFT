@@ -1,0 +1,48 @@
+#carousel-container .carousel-inner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.carousel-indicators{
+    top:88%!important;
+}
+
+.carousel-indicators img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 80px!important;
+    height: 40px!important;
+    opacity:0.8!important;
+    border: 1px solid white;
+}
+
+.carousel-indicators [data-bs-target]:hover{
+    transform: scale(1.2);
+    transition: 200ms;
+    border: none;
+}
+
+@media screen and (max-width:991px){
+    .col-lg-5 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:458px){
+    .carousel-indicators [data-bs-target]{
+        width: 50px!important;
+        height: 30px!important;
+    }
+
+    .col-lg-5 h1,.col-lg-5 h4 {
+        font-size:21px;
+    }
+
+    .col-lg-5 .kanit-thin {
+        font-size:15px;
+    }
+}

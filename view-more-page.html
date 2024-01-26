@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ye Wint Pai FDC-12</title>
+  <link rel="stylesheet" href="./vendors/boostrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./main-page-style.css">
+  <link rel="stylesheet" href="./view-more-page.css">
+  <link rel="stylesheet" href="./vendors/fontawesome/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./vendors/animate.css/animate.min.css">
+  <!-- favicon link  -->
+  <link rel="icon" href="vendors/favicon_package_v0.16/favicon-32x32.png" type="image/icon type">
+  <!-- end favicon link  -->
+  <!-- Google Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&display=swap" rel="stylesheet">
+  <!-- End Google Font Import -->
+</head>
+
+<body class="light-mode">
+  <!-- facebook sharelink  -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+    nonce="Upep48N7"></script>
+    <!-- facebook sharelink ends  -->
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg" style="padding: 0px!important;" id="navBar">
+    <div class="container d-flex  mt-2 " id="nav-container">
+      <a class="navbar-brand" href="./intro-page.html">
+        <img id="logo" class="ms-3 logo-levitate" src="./svg/whale-svgrepo-com.svg" width="80px" height="80px" alt=""
+          srcset="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav kanit-bold ms-auto">
+          <li class="nav-item p-2 mx-3" id="logo-stop-hover1">
+            <a class="nav-link active" aria-current="page" href="./main-page.html">
+              <i class="fa-solid fa-stop" id="logo-stop1"></i>
+              Home
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item p-2 mb-4 mx-4">
+        <input type="checkbox" id="darkmode-toggle" />
+        <label for="darkmode-toggle">
+          <img class="eye-open" id="eye-toggle" src="./svg/eye-open-svgrepo-com.svg" alt="" srcset="">
+          <img class="eye-closed" src="./svg/eye-closed-svgrepo-com.svg" alt="">
+        </label>
+      </div>
+      <div class="mx-3 nav-item ">
+        <a class="nav-link " href="#" role="button">
+          <!-- Offcanvas Button for id="offcanvasRight" -->
+          <button class="btn btn-dark" id="btn-offcanvas" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+              class="fa-solid fa-hand-sparkles"></i></button>
+        </a>
+      </div>
+    </div>
+  </nav>
+    <!-- Offset Right Pop Up Code -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header kanit-thin">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Credits
+          <hr>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" id="offcanvas-inner-btn"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center mt-5">
+        <h4 class="kanit-thin">These Beautiful Isometrics From The Images Are Done By Wonderful and Awesome Person,
+        </h4>
+        <h1 class="kanit-bold">Honyx</h1>
+         <br>
+         <div id="offcanvas-social-icons">
+            <a href="https://www.facebook.com/shine.vandal" target="_blank">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.behance.net/honyx" target="_blank">
+              <i class="fa-brands fa-square-behance"></i>
+            </a>
+         </div>
+      </div>
+    </div>
+    <!-- End Offset Right Pop Up Code  -->
+
+  <div class="container mt-3" id="carousel-container">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide col-lg-7 col-sm-12">
+        <div class="carousel-indicators">
+          <img src="./images/content-img 1.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 0">
+          <img src="./images/content-img 2.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-current="true" aria-label="Slide 1">
+          <img src="./images/content-img 3.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-current="true" aria-label="Slide 2">
+          <img src="./images/content-img 4.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-current="true" aria-label="Slide 3">
+          <img src="./images/content-img 6.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-current="true" aria-label="Slide 4">
+          <img src="./images/content-img 7.jpeg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-current="true" aria-label="Slide 5">
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/content-img 1.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/content-img 2.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/content-img 3.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/content-img 4.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/content-img 6.jpeg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/content-img 7.jpeg" class="d-block" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="col-lg-5 col-sm-12">
+        <h1 class="kanit-bold">Description</h1>
+        <span class="kanit-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi voluptatum,
+          aperiam asperiores cumque necessitatibus eius alias minima suscipit consequatur at nostrum dolorum optio iusto
+          tenetur rem vel ipsum numquam amet architecto dolore ab a porro sed. Omnis ipsum blanditiis tenetur dolorem
+          pariatur recusandae minus nihil repudiandae maxime impedit! Molestias eaque atque expedita adipisci possimus
+          sapiente suscipit nemo quam, voluptate, modi in. Consequuntur ut, magni fugiat suscipit et, eos esse quam amet
+          a cupiditate fugit distinctio, atque laborum quia provident?</span>
+        <hr>
+        <h4 class="kanit-bold">Author:</h4>
+        <span class="kanit-thin">Ye Wint Pai Myel Aung</span>
+        <h4 class="kanit-bold">Date:</h4>
+        <span class="kanit-thin">December 2023</span>
+        <h4 class="kanit-bold">Share:</h4>
+        <span class="kanit-thin" data-href="https://developers.facebook.com/docs/plugins/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Facebook.</a></span>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div class="container" id="contact">
+    <div class="row m-2" id="footer">
+      <div class="col-md-2">
+        <img id="" class="ms-3 logo-levitate-footer logo-footer" src="./svg/whale-svgrepo-com.svg" width="80px"
+          height="80px" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+          alt="" srcset="">
+      </div>
+      <div class="col-md-3">
+        <p>WaiZaYanTar Rd.</p>
+        <p>Thuwanna, Yangon</p>
+      </div>
+      <div class="col-md-4" id="container-social-link">
+        <p>yewintpaimyel@gmail.com</p>
+        <span><a class="social-links" href="https://www.facebook.com/yairwint.pai.52" target="_blank">Fb.</a></span>
+        &nbsp;&nbsp;
+        <span><a class="social-links" href="https://www.instagram.com/kiaru.wufuwa/" target="_blank">In.</a></span>
+        &nbsp;&nbsp;
+        <span><a class="social-links" href="https://github.com/YeWintPai" target="_blank">Gh.</a></span>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <input type="email" placeholder="Need your email here..." id="btn-email-submit">
+          <a style="position: relative;" class="btn mt-3">
+            <p id="btn-sign-up" href="" class="kanit-bold">Sign Up</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+
+  <script src="./vendors/boostrap/bootstrap.bundle.min.js"></script>
+  <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(()=>{
+      //dark mode / light mode switch
+      $('#darkmode-toggle').click(()=>{
+        $('body').toggleClass('dark-mode');
+        $('.content-info').toggleClass('dark-mode');
+        $('.nav-link').toggleClass('dark-mode');
+        $('#nav-container').toggleClass('dark-mode');
+        if($('#nav-container').hasClass('dark-mode')) {
+          $('.navbar').attr('data-bs-theme','dark')
+        }else {
+          $('.navbar').removeAttr('data-bs-theme','dark')
+        }
+        $('#btn-go-up').toggleClass('dark-mode');
+        $('.offcanvas').toggleClass('dark-mode');
+        if($('.offcanvas').hasClass('dark-mode')) {
+          $('.btn-close').addClass('btn-close-white');
+        }else {
+          $('.btn-close').removeClass('btn-close-white');
+        }
+        $('#contact').toggleClass('dark-mode');
+        $('.contact-info-button').toggleClass('dark-mode');
+      });
+    })
+  </script>
+</body>
+
+</html>
