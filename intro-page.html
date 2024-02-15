@@ -34,9 +34,9 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="navbar-nav kanit-bold m-auto">
                     <p class="kanit-thin">DARK &nbsp;</p>
-                    <p class="kanit-bold darkLightText">OR LIGHT, &nbsp;</p>
+                    <p class="kanit-bold darkLightText animateFont">OR LIGHT, &nbsp;</p>
                     <p class="kanit-thin">IT'S &nbsp;</p>
-                    <p class="kanit-bold darkLightText">UP TO YOU</p>
+                    <p class="kanit-bold darkLightText animateFont">UP TO YOU</p>
                     <div class="nav-item p-2 mb-4 mx-4">
                         <input type="checkbox" id="darkmode-toggle" />
                         <label for="darkmode-toggle">
@@ -95,13 +95,22 @@
         <hr>
         <div>
             <span>Developed By</span>
-            <span><a href="#" class="kanit-bold">Ye Wint Pai</a></span>
+            <span><a href="#" class="kanit-bold animateFont">Ye Wint Pai</a></span>
             <span>@2024.</span>
         </div>
     </div>
 
     <script src="./vendors/boostrap/bootstrap.bundle.min.js"></script>
     <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+        function toggleClasses(){
+            var element = document.getElementsByClassName("animateFont");
+            // element.classList.toggle("kanit-thin");
+            // element.classList.toggle("kanit-bold");
+        }
+
+        setInterval(toggleClasses, 500);
+    </script>
     <script>
         $(document).ready(() => {
             // btn-go-up
