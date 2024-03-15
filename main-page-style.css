@@ -201,15 +201,60 @@ label img.eye-closed {
 
 .content-info-title h1 {
   letter-spacing: 3px;
+  display: inline-block;
+  float: left;
 }
+
 
 .content-info-button {
-  left: 165px;
+  left: 25%;
   top: 50%;
 }
+/* Project Slider  */
+.pjSlider div{
+  height: 300px;
+  background-color: #111111;
+}
 
+.pjSlider img{
+  object-fit:contain;
+  width: 100%;
+  height: 300px;
+}
 
+.pjCarousel .carousel-item div{
+  width: 300px;
+  height: 300px;
+}
+/* End Project Slider  */
+/* Banner  */
 
+#banner span h2{
+  margin-inline-start: 17px;
+}
+/* End Banner */
+/* Reviews  */
+.review-container {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px ;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.review-container img{
+  width: 50px;
+  border-radius: 50%;
+}
+.review-container a{
+  color: #000000;
+}
+.review-container a.unclickable{
+  pointer-events: none;
+  text-decoration: none;
+}
+body.dark-mode .review-container a {
+  color: #f8f9fa;
+}
+/* End Reviews */
 /* logo glow */
 #logo {
   border: 1px groove cyan;
@@ -276,7 +321,99 @@ label img.eye-closed {
     transform: translateY(0px);
   }
 }
+/* end logo levitate animation */
 
+/* banner cards animation (slide in) */
+@keyframes slide-left-in{
+  0% {
+      opacity: 0;
+      transform: translateX(-80px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0px);
+  }
+}
+
+@keyframes slide-right-in{
+  0% {
+      opacity: 0;
+      transform: translateX(80px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0px);
+  }
+}
+
+.slide-left1 {
+  visibility: visible !important;
+  animation-name: slide-left-in;
+  -webkit-animation-name: slide-left-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.slide-left2{
+  visibility: visible !important;
+  animation-name: slide-left-in;
+  -webkit-animation-name: slide-left-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+.slide-left3{
+  visibility: visible !important;
+  animation-name: slide-left-in;
+  -webkit-animation-name: slide-left-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+.slide-right1 {
+  visibility: visible !important;
+  animation-name: slide-right-in;
+  -webkit-animation-name: slide-right-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.slide-right2{
+  visibility: visible !important;
+  animation-name: slide-right-in;
+  -webkit-animation-name: slide-right-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+.slide-right3{
+  visibility: visible !important;
+  animation-name: slide-right-in;
+  -webkit-animation-name: slide-right-in;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+.slideObject1,.slideObject2,.slideObject3 {
+  visibility: hidden;
+}
+
+.slideObjectRight1,.slideObjectRight2,.slideObjectRight3{
+  visibility: hidden;
+}
+/* end banner cards animaitons (slide in) */
 
 /* offcanvas  */
 #offcanvas-inner-btn{
@@ -341,6 +478,9 @@ label img.eye-closed {
 }
 
 /* end button-30 copied from an external website */
+/* heart button copied from external website  */
+
+/* end heart button copied from external website  */
 
 /* btn go up  */
 /* darkmode btn go up styling  */
@@ -448,7 +588,18 @@ input[type="email"]:focus {
   .content-item .content-img img {
     width: 480px;
   }
+
+  .content-info h1 {
+    word-wrap: normal;
+    /* width: min-content; */
+  }
+
+  .touchpoint-count p{
+    font-size: 190px;
+    margin-bottom: 40px;
+  }
 }
+
 
 @media screen and (max-width:992px){
   #btn-offcanvas {
@@ -477,8 +628,16 @@ input[type="email"]:focus {
     width: 360px;
   }
 
+  .content-info-title h1 {
+    font-size: 26px;
+  }
+
   .content-info-button {
-    top: 58%;
+    top: 50%;
+  }
+
+  .touchpoint-count p{
+    font-size: 160px!important;
   }
 }
 
@@ -488,8 +647,16 @@ input[type="email"]:focus {
   }
 
   .content-info-button {
-    position: static;
-    margin-top: 135px;
+    top: 70%;
+  }
+
+  #banner div.row{
+    margin-top: 0px!important;
+  }
+  .touchpoint-count p{
+    margin: 0px!important;
+    padding: 0px!important;
+
   }
 }
 
@@ -498,33 +665,35 @@ input[type="email"]:focus {
     margin: 10px;
   }
 
+  .touchpoint-count p{
+    font-size: 120px!important;
+  }
 }
 
 @media screen and (max-width:485px) {
-  .content-item .content-info-title {
-    left: 22%;
+  .content-info .content-info-title{
+    left: 17%;
+
+  }
+  .content-info-button{
+    left: 35%;
   }
 
-  .content-info .content-info-button .button-30{
-    left: 0%;
-  }
 }
 
 @media screen and (max-width:390px) {
-  .content-item .content-info-title {
-    left: 15%
-  }
   .content-item .content-info-title span{
     font-size: 15px;
   }
   .content-item .content-info-title h1{
     font-size: 28px;
   }
-
-
+  .touchpoint-count p{
+    font-size: 90px!important;
+  }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:324px) {
   .content-item .content-info-title span{
     font-size: 12px;
   }

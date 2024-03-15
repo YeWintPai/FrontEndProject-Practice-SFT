@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./main-page-style.css">
   <link rel="stylesheet" href="./vendors/fontawesome/fontawesome/css/all.css">
   <link rel="stylesheet" href="./vendors/animate.css/animate.min.css">
+  <!-- tiny-slider for carousel library -->
+  <link rel="stylesheet" href="node_modules/tiny-slider/dist/tiny-slider.css">
+  <!-- end tiny-slider for carousel library -->
   <!-- favicon link  -->
   <link rel="icon" href="vendors/favicon_package_v0.16/favicon-32x32.png" type="image/icon type">
   <!-- end favicon link  -->
@@ -41,9 +44,15 @@
             </a>
           </li>
           <li class="nav-item p-2 mx-3" id="logo-stop-hover2">
-            <a class="nav-link" href="#porfolio">
+            <a class="nav-link" href="#projects">
               <i class="fa-solid fa-stop" id="logo-stop2"></i>
-              Portfolio
+              Projects
+            </a>
+          </li>
+          <li class="nav-item p-2 mx-3" id="logo-stop-hover3">
+            <a class="nav-link" href="#reviews">
+              <i class="fa-solid fa-stop" id="logo-stop3"></i>
+              Comments
             </a>
           </li>
           <li class="nav-item p-2 mx-3" id="logo-stop-hover3">
@@ -82,7 +91,7 @@
         aria-label="Close"></button>
     </div>
     <div class="offcanvas-body text-center mt-5">
-      <h4 class="kanit-thin">These Beautiful Isometrics From The Images Are Done By Wonderful and Awesome Person,
+      <h4 class="kanit-thin">These Beautiful Isometrics,Artworks & Graphic Designs From The Images Are Done By Wonderful and Awesome Person,
       </h4>
       <h1 class="kanit-bold">Honyx</h1>
       <br>
@@ -100,7 +109,7 @@
   <!-- end navbar -->
 
   <!-- content body  -->
-  <div class="container" style="margin-top:70px" id="portfolio">
+  <div class="container" style="margin-top:70px" id="projects">
     <div class="content-item">
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
@@ -111,12 +120,12 @@
         <div class="content-info col-md-6 col-sm-12 text-center">
           <div class="content-info-title">
             <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
+            <span style="margin-left: 8px;" class="title-category">ENVIRONMENTAL RENDERS</span>
             <h1 class="kanit-bold">THE ALCHEMIST</h1>
           </div>
 
           <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
+            <a href="./view-more-renders.html"><button class="button-30">View More</button></a>
           </div>
         </div>
       </div>
@@ -126,18 +135,18 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
           <div id="" class="content-img ">
-            <img src="./images/content-img 6.jpeg" width="500px" height="340px" alt="">
+            <img src="./images/enviro-imgs/enviro-3.jpeg" width="500px" height="340px" alt="">
           </div>
         </div>
         <div class="content-info col-md-6 col-sm-12 text-center">
           <div class="content-info-title">
             <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+            <span style="margin-left: 8px;" class="title-category">PROJECT ENVIRO (MINIMIZED)</span>
+            <h1 class="kanit-bold">MINI NOSTALGIA </h1>
           </div>
 
           <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
+            <a href="./view-more-enviro.html"><button class="button-30">View More</button></a>
           </div>
         </div>
       </div>
@@ -147,18 +156,18 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
           <div id="" class="content-img ">
-            <img src="./images/content-img 2.jpeg" width="500px" height="340px" alt="">
+            <img src="./images/hard-surface-renders/crew-no-smoke-1.jpeg" width="500px" height="340px" alt="">
           </div>
         </div>
         <div class="content-info col-md-6 col-sm-12 text-center">
           <div class="content-info-title">
             <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+            <span style="margin-left: 8px;" class="title-category">HARD SURFACES RENDERS</span>
+            <h1 class="kanit-bold">CREW NO SMOKE</h1>
           </div>
 
           <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
+            <a href="./view-more-hard-surface-render.html"><button class="button-30">View More</button></a>
           </div>
         </div>
       </div>
@@ -168,89 +177,246 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
           <div id="" class="content-img ">
-            <img src="./images/content-img 7.jpeg" width="500px" height="340px" alt="">
+            <img src="./images/logo-works/logo1.png" width="500px" height="340px" alt="">
           </div>
         </div>
         <div class="content-info col-md-6 col-sm-12 text-center">
           <div class="content-info-title">
             <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
+            <span style="margin-left: 8px;" class="title-category">COLLECTED LOGO WORKS</span>
+            <h1 class="kanit-bold">HONYX - FTW</h1>
           </div>
 
           <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
+            <a href="./view-more-logo.html"><button class="button-30">View More</button></a>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="content-item">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
-          <div id="" class="content-img ">
-            <img src="./images/content-img 4.jpeg" width="500px" height="340px" alt="">
-          </div>
-        </div>
-        <div class="content-info col-md-6 col-sm-12 text-center">
-          <div class="content-info-title">
-            <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
-          </div>
-
-          <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-item">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
-          <div id="" class="content-img ">
-            <img src="./images/content-img 3.jpeg" width="500px" height="340px" alt="">
-          </div>
-        </div>
-        <div class="content-info col-md-6 col-sm-12 text-center">
-          <div class="content-info-title">
-            <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
-          </div>
-
-          <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-item">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center">
-          <div id="" class="content-img ">
-            <img src="./images/content-img 11.jpeg" width="500px" height="340px" alt="">
-          </div>
-        </div>
-        <div class="content-info col-md-6 col-sm-12 text-center">
-          <div class="content-info-title">
-            <span><i class="fa-solid fa-square fa-xs"></i></span>
-            <span style="margin-left: 8px;" class="title-category">NAME FOR CATEGORY BY HONYX</span>
-            <h1 class="kanit-bold">THE ALCHEMIST</h1>
-          </div>
-
-          <div class="content-info-button">
-            <a href="./view-more-page.html"><button class="button-30">View More</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
   <!-- end content body  -->
+  <!-- project carousel slider  -->
+  <div class="pjSlider">
+    <div class="">
+      <img src="./images/la-crystalPj.jpg" alt="" srcset="">
+    </div>
+    <div class="">
+      <img src="./images/la-crystal.jpg" alt="" srcset="">
+    </div>
+    <div class="">
+      <img src="./images/the-mushroomPj.jpg" alt="" srcset="">
+    </div>
+    <div class="">
+      <img src="./images/the-mushroom.jpg" alt="" srcset="">
+    </div>
+    <div class="">
+      <img src="./images/arrow-showPj.jpg" alt="" srcset="">
+    </div>
+    <div class="">
+      <img src="./images/arrow-show.jpg" alt="" srcset="">
+    </div>
+  </div>
+  <!-- end project carousel slider  -->
+  <!-- banner  -->
+  <div class="container mt-5 mb-5" id="banner">
+      <h1 class="kanit-bold text-center mb-5">Quality TouchPoints</h1>
+      <div class="mt-5">
+        <span><h2>KBTC</h2>
+        </span>
+        <span><h2 style="color:#4aceff">UNIVERSITY</h2></span>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-8">
+          <div class="card-container d-flex">
+            <div class="card ms-3 slideObject3" style="width: 18rem">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/kbtc-2.png" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObject2" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/kbtc-3.png" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObject1" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/kbtc-1.jpeg" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 order-first order-md-1">
+          <div class="touchpoint-count">
+            <p class="pb-5" style="float: right;font-size: 200px;font-weight: bolder;">01</p>
+          </div>
+        </div>
+      </div>
 
+      <div style="text-align: right;" class="mt-5 mb-5">
+        <span><h2>FUTURE NOW</h2>
+        </span>
+        <span><h2 style="color:#4aceff;">DESIGN AGENCY</h2></span>
+      </div>
+      <div class="row mt-5">
+
+        <div class="col-md-4 ">
+          <div class="touchpoint-count">
+            <p class="" style="float: left;font-size: 200px;font-weight: bolder;">02</p>
+          </div>
+        </div>
+
+        <div class="col-md-8 ">
+          <div class="card-container d-flex">
+            <div class="card ms-3 slideObjectRight1" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/lut-lat-yay-nae.png" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObjectRight2" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/76th-union-day.jpeg" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObjectRight3" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/new-year-new-chapter.jpeg" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <span><h2>DE' ORCHID</h2>
+        </span>
+        <span><h2 style="color:#4aceff">AESTHETIC</h2></span>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-8">
+          <div class="card-container d-flex">
+            <div class="card ms-3 slideObject3" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/de-orchid-aesthetic-2.jpeg" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObject2" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/de-orchid-aesthetic-1.jpeg" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObject1" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/de-orchid-aesthetic-3.jpeg" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 order-first order-md-1">
+          <div class="touchpoint-count">
+            <p class="pb-5" style="float: right;font-size: 200px;font-weight: bolder;">03</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: right;" class="mt-5 mb-5">
+        <span><h2>THE NUT BUTTER</h2>
+        </span>
+        <span><h2 style="color:#4aceff;">PACKED FOOD</h2></span>
+      </div>
+      <div class="row mt-3">
+
+        <div class="col-md-4 ">
+          <div class="touchpoint-count">
+            <p class="" style="float: left;font-size: 200px;font-weight: bolder;">04</p>
+          </div>
+        </div>
+
+        <div class="col-md-8 ">
+          <div class="card-container d-flex">
+            <div class="card ms-3 slideObjectRight1" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/the-nut-butter-1.jpeg" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObjectRight2" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/the-nut-butter-3.png" class="card-img-bottom" alt="...">
+            </div>
+  
+            <div class="card ms-3 slideObjectRight3" style="width: 18rem;">
+              <div class="card-body d-flex" style="justify-content: space-between;align-items: stretch;">
+                <p class="card-text" style="height: 100%;font-size: 20px;"><i class="fa-solid fa-ellipsis"></i></p>
+                <p class="card-title" style="height: 100%;font-size: 20px;"><i class="fa-regular fa-circle"></i></p>
+              </div>
+              <img src="./images/quality-touchpoints/the-nut-butter-2.jpeg" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- end banner  -->
+  <!-- reviews -->
+  <hr>
+  <div class="container mt-5" id="reviews">
+    <h1 class="text-center kanit-bold">COMMENTS & REVIEWS</h1>
+    <div id="#vertical" class="text-start">
+      <div class="review-container">
+        <img src="./images/annonymous-pfp.webp" alt="">
+        <a href="" class="unclickable">Annonymous</a>
+        <p class="mt-2 ms-1">အရမ်း Strong ဖြစ်</p>
+        <a href="javascript:void(0)" class="heart-btn"><i class="far fa-heart"></i></a>
+      </div>
+      <div class="review-container">
+        <img src="./images/annonymous-pfp.webp" alt="">
+        <a href="" class="unclickable">Annonymous</a>
+        <p class="mt-2 ms-1">I really admire your things. The way you present especially.</p>
+        <a href="javascript:void(0)" class="heart-btn"><i class="far fa-heart"></i></a>
+      </div>
+      <div class="review-container">
+        <img src="./images/annonymous-pfp.webp" alt="">
+        <a href="" class="unclickable">Annonymous</a>
+        <p class="mt-2 ms-1">Honyx goingg fastt</p>
+        <a href="javascript:void(0)" class="heart-btn"><i class="far fa-heart"></i></a>
+      </div>
+      <div class="review-container">
+        <img src="./images/annonymous-pfp.webp" alt="">
+        <a>Annonymous</a>
+        <p class="mt-2 ms-1">legit 💯</p>
+        <a href="javascript:void(0)" class="heart-btn"><i class="far fa-heart"></i></a>
+      </div>
+    </div>
+  </div>  
+  <!-- reviews -->
   <!-- footer  -->
   <div class="container" id="contact">
     <div class="row m-2" id="footer">
@@ -281,14 +447,16 @@
       </div>
     </div>
   </div>
-
+  <!-- end footer  -->
+  
   <!-- right bottom Go Up Button  -->
   <a href="#" id="btn-go-up">
     <i class="fa-solid fa-arrow-up-long"></i>
   </a>
-  <button class="btn btn-primary" onclick="save()">Save</button>
-  <button class="btn btn-success" onclick="load()">Load</button>
   <!-- end right bottom go up button  -->
+  <!-- tiny-slider for carousel library -->
+  <script src="node_modules/tiny-slider/dist/min/tiny-slider.js"></script>
+  <!-- end tiny-slider for carousel library -->
   <script src="./vendors/boostrap/bootstrap.bundle.min.js"></script>
   <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
   <script>
@@ -345,10 +513,108 @@
         $('.contact-info-button').toggleClass('dark-mode');
       });
       //end dark mode / light mode switch
-      // end localStorage dark-mode button 
+      // heart btn 
+      $('.review-container a.heart-btn').click(function (){
+        $(this).find('i').toggleClass('far fas');
+      });
+      // end heart btn 
 
-    })
+      // start animate based on winTop (Banner Cards)
+      // use log to calculate using sight 
+       $(window).scroll(()=>{
+            let winTop = $(window).scrollTop();
+
+            let slideObjects1 = $('.slideObject1');
+            let slideObjects2 = $('.slideObject2');
+            let slideObjects3 = $('.slideObject3');
+
+            slideObjects1.each((index,element)=>{
+              let slideObject1 = $(element);
+              let slideObject1TopPosition = slideObject1.offset().top;
+
+              if(winTop + 1000 > slideObject1TopPosition) {
+                $(slideObject1).addClass('slide-left1');
+              }
+            });
+
+            slideObjects2.each((index,element)=>{
+              let slideObject2 = $(element);
+              let slideObject2TopPosition = slideObject2.offset().top;
+
+              if(winTop + 1000 > slideObject2TopPosition) {
+                $(slideObject2).addClass('slide-left2');
+              }
+            });
+
+            slideObjects3.each((index,element)=>{
+              let slideObject3 = $(element);
+              let slideObject3TopPosition = slideObject3.offset().top;
+
+              if(winTop + 1000 > slideObject3TopPosition) {
+                $(slideObject3).addClass('slide-left3');
+              }
+            });
+
+            let slideObjectsRight1 = $('.slideObjectRight1');
+            let slideObjectsRight2 = $('.slideObjectRight2');
+            let slideObjectsRight3 = $('.slideObjectRight3');
+
+            slideObjectsRight1.each((index,element)=>{
+              let slideObjectRight1 = $(element);
+              let slideObjectRight1TopPosition = slideObjectRight1.offset().top;
+
+              if(winTop + 1000 > slideObjectRight1TopPosition) {
+                $(slideObjectRight1).addClass('slide-right1');
+              }
+            });
+
+            slideObjectsRight2.each((index,element)=>{
+              let slideObjectRight2 = $(element);
+              let slideObjectRight2TopPosition = slideObjectRight2.offset().top;
+
+              if(winTop + 1000 > slideObjectRight2TopPosition) {
+                $(slideObjectRight2).addClass('slide-right2');
+              }
+            });
+
+            slideObjectsRight3.each((index,element)=>{
+              let slideObjectRight3 = $(element);
+              let slideObjectRight3TopPosition = slideObjectRight3.offset().top;
+
+              if(winTop + 1000 > slideObjectRight3TopPosition) {
+                $(slideObjectRight3).addClass('slide-right3');
+              }
+            });
+            
+          });  
+      //end animate based on winTop (Banner Cards)
+    });
   </script>
+ <!-- project carousel  -->
+  <script>
+    var slider = tns({
+      "container" : ".pjSlider",
+      "items" : 2,
+      "autoplay" : true,
+      "autoplayButton" : false,
+      "autoplayTimeout" : 3500,
+      "loop" : false,
+      "speed" : 3000,
+      "autoplayButtonOutput" : false,
+      "autoplayResetOnVisibility" : false,
+      "autoplayHoverPause" : true,
+      "rewind" : true,
+      "controls" : false,
+      "nav" : false,
+      // "autoWidth" : true,
+    });
+
+    
+  </script>
+ <!-- end project carousel  -->
+ <!-- // heart btn  -->
+ 
+ <!-- // end heart btn  -->
 </body>
 
 </html>

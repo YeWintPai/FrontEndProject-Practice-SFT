@@ -26,6 +26,27 @@
     border: none;
 }
 
+#menu-btn a{
+    font-size: 30px;
+    text-decoration: none;
+}
+#menu-btn.light-mode a{
+    color: #000000;
+}
+#menu-btn.dark-mode a{
+    color: #f8f9fa;
+}
+#menu-btn #home-btn{
+    font-size: 35px;
+}
+
+@media screen and (max-width:1199px){
+    #carousel-container .carousel-inner img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
 @media screen and (max-width:991px){
     .col-lg-5 {
         margin-top: 40px;
