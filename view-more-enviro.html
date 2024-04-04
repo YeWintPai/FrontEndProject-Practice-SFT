@@ -205,8 +205,43 @@
   <script src="./vendors/jQuery/jquery-3.7.1.min.js"></script>
   <script>
     $(document).ready(()=>{
+      //retreive dark-mode on page load
+      $(()=>{
+          var darkModeData = localStorage.getItem('darkMode');
+          if (darkModeData == 'yes') {
+              $("#darkmode-toggle").prop('checked', true);
+                        $('body').addClass('dark-mode');
+                        $('.content-info').addClass('dark-mode');
+                        $('.nav-link').addClass('dark-mode');
+                        $('#nav-container').addClass('dark-mode');
+                        $('.navbar').attr('data-bs-theme', 'dark')
+                        $('#btn-go-up').addClass('dark-mode');
+                        $('.offcanvas').addClass('dark-mode');
+                        $('.btn-close').addClass('btn-close-white');
+                        $('#contact').addClass('dark-mode');
+                        $('.contact-info-button').addClass('dark-mode');
+                        // intro page 
+                        $('#intro-main-text').addClass('dark-mode');
+                        $('#enter-btn').addClass('btn-light');
+                        $('#intro-footer').addClass('dark-mode');
+                        $('#menu-btn').addClass('dark-mode');
+
+              console.log('darkmode is true, body should be dark mode');
+          } else if (darkModeData == 'no') {
+              $("#darkmode-toggle").prop('checked', false);
+              console.log('darkmode is false');
+          }
+      })
+      //end retreiving dark-mode;
       //dark mode / light mode switch
       $('#darkmode-toggle').click(()=>{
+        if($('#darkmode-toggle').is(":checked")){
+            localStorage.setItem('darkMode', 'yes');
+            console.log('darkmode is set to true');
+        } else {
+            localStorage.setItem('darkMode', 'no');
+            console.log('darkmode is set to false');
+        };
         $('body').toggleClass('dark-mode');
         $('.content-info').toggleClass('dark-mode');
         $('.nav-link').toggleClass('dark-mode');
@@ -227,7 +262,7 @@
         $('.contact-info-button').toggleClass('dark-mode');
         $('#menu-btn').toggleClass('dark-mode');
       });
-    })
+    });
   </script>
 </body>
 
